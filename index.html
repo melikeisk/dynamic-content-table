@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dom.js" defer></script>
+</head>
+<body>
+    <h1 class="status-message">Dynamic Table and Content Modification</h1>
+
+    <table id="exampleTable">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.1</td>
+                <td>1.2</td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td>2.2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <input type="button" value="Update Div Content" onclick="updateDivContent()">
+        <input type="button" value="Update Paragraph Content" onclick="updateParagraphContent()">
+        <input type="button" value="Highlight Cell" onclick="changeCellColor()">
+        <input type="button" value="Add Row to Table" onclick="addRow()">
+        <input type="button" value="Remove Last Row" onclick="removeRow()">
+    </div>
+
+    <div class="content-div"> Hello</div>
+    <div id="parentDiv">
+        <p id="contentParagraph" class="result-paragraph">World!</p>
+    </div>
+</body>
+</html>
